@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.3/angular.min.js"></script>
+    <script src="todo.js"></script>
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body>
+    <h2>Todo</h2>
+    <div ng-controller="TodoCtrl">
+      <ul class="unstyled">
+        <li ng-repeat="todo in todos">
+          <input type="checkbox" ng-model="todo.done">
+          <span class="done-{{todo.done}}">{{todo.text}}</span>
+        </li>
+      </ul>
+    </div>
+    <input id="refreshPageDigest" value="Refresh page using digest" type="button"></input>
+    <input id="clickMeNoApply" value="Add todo without apply" type="button"></input>
+    <input id="clickMeApply"   value="Add todo with apply" type="button"></input>
+    <input id="ajaxWithjQueryNoApply" value="Ajax without apply" type="button"></input>
+    <input id="ajaxWithjQueryApply" value="Ajax apply" type="button"></input>
+  </body>
+</html>
