@@ -2,5 +2,5 @@
 
 =============
 
-  ### TODO
-    - Add exercise description
+### TODO
+  - Add exercise description
